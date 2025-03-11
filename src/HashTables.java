@@ -15,6 +15,6 @@ public class HashTables {
     }
     public int getLinearProbIndex (int key,int i){return 1;}
  public int getQuadraticProbIndex (int key,int  i){return 1;}
-public int getDoubleHash (int key,int i){}
+public int getDoubleHash (int key,int i){return 1;}
 
 }
