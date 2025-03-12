@@ -6,7 +6,7 @@ public class HashTables {
     // do while loop to iterate while i !=m the length of the data set
     }
     // function for searching a hash table
-    public Object hash_search(int value,int key)
+    public int [] hash_search(int value,int key)
     {
         int i = 0;
         // do while loop for i !m or array at j != null;
