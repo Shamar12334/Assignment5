@@ -71,7 +71,7 @@ public int getDoubleHash (int key,int i)
 // prints table
 public void table(int [] table){
         for(int i= 0; i<size; i++)
-            System.out.println("Index "+i +" "+ table[i]);
+            System.out.println("Index: "+i +" "+"value: "+ table[i]);
 }
 
 }
