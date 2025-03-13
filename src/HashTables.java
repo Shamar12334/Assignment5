@@ -17,12 +17,20 @@ public class HashTables{
 
     // do while loop to iterate while i != size
         while(i!= size){
-            if(name.equals("double")) {
-                j = getDoubleHash(key, i);
-            }else if(name.equals("linear")) {
-                j = getLinearProbIndex(key, i);
-            }else if(name.equals("quadratic") ) {
-                j = getQuadraticProbIndex(key, i);
+            // switch statement to switch probing type
+            switch(name)
+            {
+                case "double":
+                    j = getDoubleHash(key, i);
+                    break;
+                case "linear":
+                    j = getLinearProbIndex(key, i);
+                    break;
+                case "quadratic":
+                    j = getQuadraticProbIndex(key, i);
+                    break;
+                default:
+                    System.out.println("not found");
             }
             if(Table[j] == 0) {
                 Table[j] = key;
@@ -39,12 +47,20 @@ public class HashTables{
         int j=0;
         // do while loop for i !=size
         while ( i != size) {
-            if (name.equals("double")){
-                j = getDoubleHash(key, i);
-        } else if (name.equals("linear")){
-            j = getLinearProbIndex(key, i);
-         } else if(name.equals("quadratic")) {
-                j = getQuadraticProbIndex(key, i);
+            //switch statement for switching probing type
+            switch(name)
+            {
+                case "double":
+                    j = getDoubleHash(key, i);
+                    break;
+                case "linear":
+                    j = getLinearProbIndex(key, i);
+                    break;
+                case "quadratic":
+                    j = getQuadraticProbIndex(key, i);
+                    break;
+                default:
+                    System.out.println("not found");
             }
             if(Table[j] == key){
                 return j;
